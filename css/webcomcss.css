@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    --poppins: 'Poppins', sans-serif;
+    --blue: #3E65AC;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: var(--poppins);
+    font-size: 2rem;
+    background: var(--blue);
+    color: whitesmoke;
+}
+
+h2, h3, h4, h5, h6, h7 {
+    font-family: var(--poppins);
+    font-size: 2rem;
+    background: black;
+    color: whitesmoke;
+}
+
+img {
+    width: 100%;
+}
+
+.img-small {
+    width: 50%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card__title {
+    font-family: var(--poppins);
+    font-size: 2rem;
+}
+
+
