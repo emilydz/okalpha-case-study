@@ -23,7 +23,7 @@ h1 {
     color: whitesmoke;
 }
 
-h2, h3, h4, h5, h6, h7 {
+.section-header {
     font-family: var(--poppins);
     font-size: 2rem;
     background: black;
@@ -37,6 +37,15 @@ img {
 .img-small {
     width: 50%;
 }
+
+.grid-container {
+
+}
+
+.grid-item {
+
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 2rem;
