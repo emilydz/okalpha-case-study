@@ -4,72 +4,131 @@
     <title>Okalpha Web Components</title>
     <link href="css/webcomcss.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-    <h1>Okalpha Web components</h1>
     <nav>
-        <ul>
-            <li>Fonts</li>
-            <li>Atoms</li>
-            <li>Main Navigation</li>
-            <li>Hero Section</li>
-            <li>Portfolio Section</li>
-        </ul>
+        <div class="sidenav">
+            <ul>
+                <li class="sidenav__item"><a href="index.html#fonts">Fonts</a></li>
+                <li class="sidenav__item"><a href="index.html#colors">Colors</a></li>
+                <li class="sidenav__item"><a href="index.html#atoms">Atoms</a></li>
+                <li class="sidenav__item"><a href="index.html#nav">Navigation</a></li>
+                <li class="sidenav__item"><a href="index.html#hero">Hero Section</a></li>
+                <li class="sidenav__item"><a href="index.html#portfolio">Portfolio Section</a></li>
+            </ul>
+        </div>
     </nav>
-<!-- Fonts -->
-    <section>
-        <h2 class="section-header">Fonts</h2>
-            <p>Poppins</p>
-    </section>
-<!-- Colors -->
-    <section>
-        <h3 class="section-header">Colors</h3>
-            <img src="img/red.png" class="img-small" alt="red">
-                <p>#EB2E39</p>
-            <img src="img/blue.png" class="img-small" alt="blue">
-                <p>#3E65AC</p>
-            <img src="img/yellow.png" class="img-small" alt="yellow">
-                <p>#FCDD3A</p>
-    </section>
-<!-- Atoms -->
-    <section>
-        <h4 class="section-header">Atoms</h4>
-            <div class="card">
-                <p class="card__title">Arrows</p>
-                <p>image:</p>
-                <img src="img/hero-section__icon.png" class="img-small" alt="arrow">
-                <p>code:</p>
-            </div>
-    </section>
-<!-- Main Nav -->
-    <section>
-        <h5 class="section-header">Main Navigation</h5>
-            <div class="card">
-                <p class="card__title">.nav-bar</p>
-                <p>image:</p>
-                <img src="img/nav-bar.png" alt="nav bar">
-                <p>code:</p>
-            </div>
-    </section>
-<!-- Hero -->
-    <section>
-        <h6 class="section-header">Hero Section</h6>
-            <div class="card">
-                <p class="card__title">.hero-section</p>
-                <p>image:</p>
-                <img src="img/hero-section.png" alt="hero section">
-                <p>code:</p>
-            </div>
-    </section>
-<!-- Portfolio -->
-    <section>
-        <p class="section-header">Portfolio Section</p>
-            <div class="card">
-                <p class="card__title">.portfolio-section</p>
-                <p>image:</p>
-                <img src="img/portfolio-section.png" alt="portfolio section">
-                <p>code:</p>
-            </div>
-    </section>
+    <div class="content">
+        <h1>Okalpha Web components</h1>
+    <!-- Fonts -->
+        <section>
+            <h2 class="section-header" id="fonts">Fonts</h2>
+                <p class="font">Poppins</p>
+                <p>Font used on the Okalpha website is Neue Haas Grotesk Bold. I have opted to use Poppins as a free alternative.</p>
+        </section>
+    <!-- Colors -->
+        <section>
+            <h3 class="section-header" id="colors">Colors</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="img/red.png" class="img-small" alt="red">
+                        <p>#EB2E39</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/blue.png" class="img-small" alt="blue">
+                        <p>#1061eb</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/yellow.png" class="img-small" alt="yellow">
+                        <p>#FCDD3A</p>    
+                    </div>
+                </div>
+        </section>
+    <!-- Atoms -->
+        <section>
+            <h4 class="section-header" id="atoms">Atoms</h4>
+                <div class="card">
+                    <p class="card__title">Arrows</p>
+                    <p>image:</p>
+                        <img src="img/hero-section__icon.png" class="img-small" alt="arrow">
+                    <p>code:</p>
+                        <p class="arrow">&#8595</p>
+                </div>
+        </section>
+    <!-- Main Nav -->
+        <section>
+            <h5 class="section-header" id="nav">Main Navigation</h5>
+                <div class="card">
+                    <p class="card__title">.nav-bar</p>
+                    <p>image:</p>
+                    <img src="img/nav-bar.png" alt="nav bar">
+                    <p>code:</p>
+                    <!-- make it match -->
+                        <div class="container">
+                            <section class="nav-bar">
+                                <p class="nav-bar__title">okalpha</p>
+                                <nav>
+                                    <ul class="nav-bar__list">
+                                        <li class="nav-bar__list--item nav-bar__list--item-active"><a href="#">Home</a></li>
+                                        <li class="nav-bar__list--item"><a href="#">Work</a></li>
+                                        <li class="nav-bar__list--item"><a href="#">Shop</a></li>
+                                        <li class="nav-bar__list--item"><a href="#">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </section>
+                        </div>
+                </div>
+        </section>
+    <!-- Hero -->
+        <section>
+            <h6 class="section-header" id="hero">Hero Section</h6>
+                <div class="card">
+                    <p class="card__title">.hero-section</p>
+                    <p>image:</p>
+                        <img src="img/hero-section.png" alt="hero section">
+                    <p>code:</p>
+                        <div class="hero-section">
+                            <img src="img/hero-background.png">
+                            <p class="hero-section__text">Hey.</p>
+                            <p class="hero-section__text hero-section__text-sub">We're ok.</p>
+                            <p class="arrow hero-section__icon">&#8595</p>
+                        </div>
+                </div>
+        </section>
+    <!-- Portfolio -->
+        <section>
+            <p class="section-header" id="portfolio">Portfolio Section</p>
+                <div class="card">
+                    <p class="card__title">.portfolio-section</p>
+                    <p>image:</p>
+                    <img src="img/portfolio-section.png" alt="portfolio section">
+                    <p>code:</p>
+                        <div class="porfolio-section">
+                            <ul class="portfolio-section__list">
+                                <li class="portfolio-section__list-title">Our Work.</li>
+                                <li>
+                                    <div class="portfolio-section-flex">
+                                        <div class="portfolio-section__title">
+                                            <p class="portfolio-section__list-item--sub">Project Headers</p>
+                                            <p class="portfolio-section__list-item">MakeRegin.</p>
+                                        </div>
+                                        <p class="arrow portfolio-section__icon">&#8595</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="portfolio-section-flex">
+                                        <div class="portfolio-section__title">
+                                            <p class="portfolio-section__list-item--sub">Product Animations</p>
+                                            <p class="portfolio-section__list-item">IndieFin.</p>
+                                        </div>
+                                        <p class="arrow portfolio-section__icon">&#8595</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+        </section>
+    </div>
 </body>
 </html>
