@@ -257,3 +257,62 @@ a:hover {
 .portfolio-section__icon {
     font-size: 2rem;
 }
+
+/* services component */
+.services-section {
+    background-color: var(--blue);
+}
+
+.services-section__header {
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+}
+
+.services-section__list {
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+/* team component */
+.team-section {
+    background-color: var(--red);
+}
+
+.team-section__header {
+    color: white;
+    font-size: 3rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.team-section__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team-section__container :nth-child(2) {
+    padding-top: 10rem;
+    border: 3px solid black;
+}
+
+.team-section__card {
+    padding: 2rem;
+}
+
+.team-section__img {
+
+}
+
+.team-section__title {
+    color: white;
+    padding: 0;
+}
+
+.team-section__title-sub {
+    color: white;
+    padding: 0;
+    font-size: .5rem;
+}
