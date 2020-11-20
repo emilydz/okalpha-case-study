@@ -3,6 +3,7 @@
 html {
     --poppins: 'Poppins', sans-serif;
     --blue: #1061eb;
+    --darkblue: #053584;
     --yellow: #FCDD3A;
     --red: #EB2E39;
 }
@@ -182,6 +183,32 @@ a:hover {
     top: 10rem;
     left: 2rem;
     font-size: 3rem;
+}
+
+/* about component */
+.about-section {
+    background-color: var(--blue);
+}
+
+.about-section__header {
+    padding: 5rem 4rem 2rem 2rem;
+    font-size: 2rem;
+    color: white;
+    line-height: 2.5rem;
+}
+
+.about-section__header-blue {
+    font-size: 2rem;
+    color: var(--darkblue);
+}
+
+.about-section__body {
+    color: white;
+    padding: 0 2rem 2rem 2rem;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    font-weight: lighter;
 }
 
 /* portfolio component */
