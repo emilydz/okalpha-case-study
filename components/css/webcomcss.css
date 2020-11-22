@@ -5,6 +5,7 @@ html {
     --blue: #1061eb;
     --darkblue: #053584;
     --yellow: #FCDD3A;
+    --darkyellow: #ebc720;
     --red: #EB2E39;
 }
 
@@ -113,9 +114,19 @@ img {
 
 /* atoms */
 
-.arrow {
+.arrow--blue {
     font-size: 6rem;
     color: var(--blue);
+}
+
+.arrow--white__background {
+  background-color: var(--yellow);
+  margin-right: 13rem;
+}
+
+.arrow--white {
+    font-size: 5rem;
+    color: white;
 }
 
 /* navbar component */
@@ -265,13 +276,17 @@ a:hover {
 
 .services-section__header {
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     font-size: 3rem;
+    border-bottom: 5rem double var(--yellow);
+    margin: 2rem;
 }
 
 .services-section__list {
+    border-top: 1.5rem solid var(--yellow);
+    margin: 2rem;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: justify;
@@ -286,6 +301,7 @@ a:hover {
     color: white;
     font-size: 3rem;
     padding: 2rem 2rem 0 2rem;
+    margin: 0;
 }
 
 .team-section__container {
@@ -293,26 +309,84 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.team-section__container :nth-child(2) {
-    padding-top: 10rem;
-    border: 3px solid black;
-}
-
 .team-section__card {
     padding: 2rem;
 }
 
-.team-section__img {
+.team-section__card--offset {
+    padding-top: 10rem;
+}
 
+.team-section__img {
+    box-shadow: -5px 5px 1px 1px var(--darkyellow);
 }
 
 .team-section__title {
     color: white;
-    padding: 0;
+    padding: 1rem 0 .3rem 0;
+    margin: 0;
 }
 
 .team-section__title-sub {
     color: white;
+    opacity: .6;
     padding: 0;
+    margin: 0;
     font-size: .5rem;
+}
+
+/* footer component */
+.footer-section {
+  position: relative;
+}
+
+.footer__img {
+  height: 20rem;
+}
+
+.flex-container {
+  z-index: 1;
+  position: absolute;
+  top: 1rem;
+  padding: 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__header {
+  color: white;
+  font-size: 3rem;
+  padding: 0 7rem .5rem 0;
+  margin: 0;
+  border-bottom: 3px solid white;
+}
+
+.footer__item-title {
+  color: white;
+  margin: 0;
+  font-size: .7rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.footer__item-email {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  padding-top: .2rem;
+}
+
+.footer__item-address {
+  color: white;
+  margin: 0;
+  font-size: .7rem;
+  line-height: 17px;
+}
+
+.left {
+  position: absolute;
+  z-index: 1;
+  top: 8rem;
+  right: 1rem;
 }
