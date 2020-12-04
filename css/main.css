@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    --poppins: 'Poppins', sans-serif;
+    --blue: #1061eb;
+    --darkblue: #053584;
+    --yellow: #FCDD3A;
+    --darkyellow: #ebc720;
+    --red: #EB2E39;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+/* global, body, content */
+body {
+    margin: 0;
+    font-family: var(--poppins);
+}
+
+/* images */
+img {
+    width: 100%;
+}
+
+.img-small {
+    width: 40%;
+}
+
+/* atoms */
+
+.arrow--blue {
+    font-size: 6rem;
+    color: var(--blue);
+}
+
+.arrow--white__background {
+  background-color: var(--yellow);
+  margin-right: 13rem;
+}
+
+.arrow--white {
+    font-size: 5rem;
+    color: white;
+}
+
+/* navbar component */
+.container {
+    margin: 2rem 3rem;
+}
+
+.nav-bar {
+    display: flex;
+    border-bottom: 4px solid black;
+    justify-content: space-between;
+}
+
+.nav-bar__title {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+
+.nav-bar__list {
+    list-style: none;
+    letter-spacing: 2px;
+    display: flex;
+}
+
+.nav-bar__list--item a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding: 0 1rem;
+}
+
+.nav-bar__list--item-active a {
+    color: #4287f5;
+}
+
+a:hover {
+    color: #71a0eb;
+}
+
+/* hero section component */
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section__text {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+    top: 5rem;
+    left: 2rem;
+    display: inline-block;
+}
+
+.hero-section__text-sub {
+    top: 8.5rem;
+    left: 2rem;
+}
+
+.hero-section__icon {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    font-size: 3rem;
+}
+
+/* about component */
+.about-section {
+    background-color: var(--blue);
+}
+
+.about-section__header {
+    padding: 5rem 4rem 2rem 2rem;
+    font-size: 2rem;
+    color: white;
+    line-height: 2.5rem;
+}
+
+.about-section__header-blue {
+    font-size: 2rem;
+    color: var(--darkblue);
+}
+
+.about-section__body {
+    color: white;
+    padding: 0 2rem 2rem 2rem;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    font-weight: lighter;
+}
+
+/* portfolio component */
+
+.portfolio-section {
+
+}
+
+.portfolio-section__list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.portfolio-section__list-title {
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: bolder;
+    border-bottom: 3px solid var(--blue);
+}
+
+.portfolio-section__list-item {
+    color: var(--red);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0 0 2rem 0;
+    margin: 0;
+
+}
+
+.portfolio-section__list-item--sub {
+    color: var(--red);
+    font-size: .3rem;
+    margin: 2rem 0 0 0;
+}
+
+.portfolio-section-flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--blue);
+}
+
+.portfolio-section__title {
+    flex-direction: column;
+}
+
+.portfolio-section__icon {
+    font-size: 2rem;
+}
+
+/* services component */
+.services-section {
+    background-color: var(--blue);
+}
+
+.services-section__header {
+    color: white;
+    padding: 1rem 0;
+    font-size: 3rem;
+    border-bottom: 5rem double var(--yellow);
+    margin: 2rem;
+}
+
+.services-section__list {
+    border-top: 1.5rem solid var(--yellow);
+    margin: 2rem;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+/* team component */
+.team-section {
+    background-color: var(--red);
+}
+
+.team-section__header {
+    color: white;
+    font-size: 3rem;
+    padding: 2rem 2rem 0 2rem;
+    margin: 0;
+}
+
+.team-section__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team-section__card {
+    padding: 2rem;
+}
+
+.team-section__card--offset {
+    padding-top: 10rem;
+}
+
+.team-section__img {
+    box-shadow: -5px 5px 1px 1px var(--darkyellow);
+}
+
+.team-section__title {
+    color: white;
+    padding: 1rem 0 .3rem 0;
+    margin: 0;
+}
+
+.team-section__title-sub {
+    color: white;
+    opacity: .6;
+    padding: 0;
+    margin: 0;
+    font-size: .5rem;
+}
+
+/* footer component */
+.footer-section {
+  position: relative;
+}
+
+.footer__img {
+  height: 20rem;
+}
+
+.flex-container {
+  z-index: 1;
+  position: absolute;
+  top: 1rem;
+  padding: 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__header {
+  color: white;
+  font-size: 3rem;
+  padding: 0 7rem .5rem 0;
+  margin: 0;
+  border-bottom: 3px solid white;
+}
+
+.footer__item-title {
+  color: white;
+  margin: 0;
+  font-size: .7rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.footer__item-email {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  padding-top: .2rem;
+}
+
+.footer__item-address {
+  color: white;
+  margin: 0;
+  font-size: .7rem;
+  line-height: 17px;
+}
+
+.left {
+  position: absolute;
+  z-index: 1;
+  top: 8rem;
+  right: 1rem;
+}
